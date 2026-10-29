@@ -1,0 +1,16 @@
+FILE INFORMATION
+Name pic.jpeg
+Path: C:\Users\sardo\Desktop\Studium\3. Semester\Objektorientierte Dienstleistungen\Projects\ODE_06\pic.jpeg
+Absolute Path: C:\Users\sardo\Desktop\Studium\3. Semester\Objektorientierte Dienstleistungen\Projects\ODE_06\pic.jpeg
+Exists: true
+Is file: true
+Is directory: false
+Can read: true
+Can write: true
+Size in bytes: 19603
+- - - - - - - - - - - - -
+DIRECTORY INFORMATION
+Parent directory: C:\Users\sardo\Desktop\Studium\3. Semester\Objektorientierte Dienstleistungen\Projects\ODE_06
+Exists: true
+Is file: false
+Is directory: true
