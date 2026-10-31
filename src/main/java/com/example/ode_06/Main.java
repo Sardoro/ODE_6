@@ -65,13 +65,35 @@ public class Main {
         }
 
         System.out.println("Output file: " + output.getAbsolutePath());
-
+        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-");
         FileInputStream input = null;
 
         try {
             input = new FileInputStream(image);
-            int current = input.read();
-            System.out.println("First byte: " + current);
+            int current;
+            char previous = ' ';
+            boolean found = false;
+
+            while ((current = input.read()) != -1){
+                char character = (char) current;
+
+                if (previous == '#' && character == '#'){
+                    found = true;
+                    break;
+                }
+                previous = character;
+            }
+            if (found){
+                System.out.println("Message start found.");
+
+                while ((current = input.read()) != -1 && current != 0){
+                    char character = (char) current;
+                    System.out.print(character);
+                }
+
+            }else {
+                System.out.println("Message start not found.");
+            }
         }catch (IOException e){
             System.out.println("Error while reading file.");
         }finally {
